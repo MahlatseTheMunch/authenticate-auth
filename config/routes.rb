@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :approvals
   resources :allocation_types
+  
   get 'sessions/index'
   get 'sessions/dashboard'
   get 'sessions/login'
