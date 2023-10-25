@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  days_allocated: 1.5
+  employee: one
+  period_type: one
+  leave_type: one
+
+two:
+  days_allocated: 1.5
+  employee: two
+  period_type: two
+  leave_type: two

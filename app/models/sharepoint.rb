@@ -1,0 +1,2 @@
+class Sharepoint < ApplicationRecord
+end

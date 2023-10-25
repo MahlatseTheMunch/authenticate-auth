@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @leave_history %>
+
+<div>
+  <%= link_to "Edit this leave history", edit_leave_history_path(@leave_history) %> |
+  <%= link_to "Back to leave histories", leave_histories_path %>
+
+  <%= button_to "Destroy this leave history", @leave_history, method: :delete %>
+</div>

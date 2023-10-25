@@ -1,0 +1,47 @@
+<%= form_with(model: skhokho) do |form| %>
+  <% if skhokho.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(skhokho.errors.count, "error") %> prohibited this skhokho from being saved:</h2>
+
+      <ul>
+        <% skhokho.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cardDate, style: "display: block" %>
+    <%= form.date_field :cardDate %>
+  </div>
+
+  <div>
+    <%= form.label :skhokhoCreator, style: "display: block" %>
+    <%= form.number_field :skhokhoCreator %>
+  </div>
+
+  <div>
+    <%= form.label :employee_id, style: "display: block" %>
+    <%= form.text_field :employee_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_field :comment %>
+  </div>
+
+  <div>
+    <%= form.label :processed, style: "display: block" %>
+    <%= form.check_box :processed %>
+  </div>
+
+  <div>
+    <%= form.label :voucher_id, style: "display: block" %>
+    <%= form.text_field :voucher_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

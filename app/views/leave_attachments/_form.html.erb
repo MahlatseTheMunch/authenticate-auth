@@ -1,0 +1,32 @@
+<%= form_with(model: leave_attachment) do |form| %>
+  <% if leave_attachment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(leave_attachment.errors.count, "error") %> prohibited this leave_attachment from being saved:</h2>
+
+      <ul>
+        <% leave_attachment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :leave_id, style: "display: block" %>
+    <%= form.text_field :leave_id %>
+  </div>
+
+  <div>
+    <%= form.label :filename, style: "display: block" %>
+    <%= form.text_field :filename %>
+  </div>
+
+  <div>
+    <%= form.label :attachment_link, style: "display: block" %>
+    <%= form.text_field :attachment_link %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

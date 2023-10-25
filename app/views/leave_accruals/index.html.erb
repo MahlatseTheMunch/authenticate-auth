@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Leave accruals</h1>
+
+<div id="leave_accruals">
+  <% @leave_accruals.each do |leave_accrual| %>
+    <%= render leave_accrual %>
+    <p>
+      <%= link_to "Show this leave accrual", leave_accrual %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New leave accrual", new_leave_accrual_path %>

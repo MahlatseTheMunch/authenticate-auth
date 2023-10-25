@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Leave attachments</h1>
+
+<div id="leave_attachments">
+  <% @leave_attachments.each do |leave_attachment| %>
+    <%= render leave_attachment %>
+    <p>
+      <%= link_to "Show this leave attachment", leave_attachment %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New leave attachment", new_leave_attachment_path %>

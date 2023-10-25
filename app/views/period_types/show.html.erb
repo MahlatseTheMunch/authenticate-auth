@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @period_type %>
+
+<div>
+  <%= link_to "Edit this period type", edit_period_type_path(@period_type) %> |
+  <%= link_to "Back to period types", period_types_path %>
+
+  <%= button_to "Destroy this period type", @period_type, method: :delete %>
+</div>

@@ -1,0 +1,72 @@
+<%= form_with(model: leafe) do |form| %>
+  <% if leafe.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(leafe.errors.count, "error") %> prohibited this leafe from being saved:</h2>
+
+      <ul>
+        <% leafe.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :from_date, style: "display: block" %>
+    <%= form.date_field :from_date %>
+  </div>
+
+  <div>
+    <%= form.label :to_date, style: "display: block" %>
+    <%= form.date_field :to_date %>
+  </div>
+
+  <div>
+    <%= form.label :from_half, style: "display: block" %>
+    <%= form.check_box :from_half %>
+  </div>
+
+  <div>
+    <%= form.label :to_half, style: "display: block" %>
+    <%= form.check_box :to_half %>
+  </div>
+
+  <div>
+    <%= form.label :total_days, style: "display: block" %>
+    <%= form.text_field :total_days %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :leave_type_id, style: "display: block" %>
+    <%= form.text_field :leave_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :employee_id, style: "display: block" %>
+    <%= form.text_field :employee_id %>
+  </div>
+
+  <div>
+    <%= form.label :leave_status_id, style: "display: block" %>
+    <%= form.text_field :leave_status_id %>
+  </div>
+
+  <div>
+    <%= form.label :allocation_type_id, style: "display: block" %>
+    <%= form.text_field :allocation_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_field :comment %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

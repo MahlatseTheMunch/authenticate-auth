@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Period types</h1>
+
+<div id="period_types">
+  <% @period_types.each do |period_type| %>
+    <%= render period_type %>
+    <p>
+      <%= link_to "Show this period type", period_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New period type", new_period_type_path %>

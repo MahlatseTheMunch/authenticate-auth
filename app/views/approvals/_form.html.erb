@@ -1,0 +1,67 @@
+<%= form_with(model: approval) do |form| %>
+  <% if approval.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(approval.errors.count, "error") %> prohibited this approval from being saved:</h2>
+
+      <ul>
+        <% approval.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :leave_id, style: "display: block" %>
+    <%= form.text_field :leave_id %>
+  </div>
+
+  <div>
+    <%= form.label :leave_type_id, style: "display: block" %>
+    <%= form.text_field :leave_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :leave_status_id, style: "display: block" %>
+    <%= form.text_field :leave_status_id %>
+  </div>
+
+  <div>
+    <%= form.label :employee_id, style: "display: block" %>
+    <%= form.text_field :employee_id %>
+  </div>
+
+  <div>
+    <%= form.label :sequence, style: "display: block" %>
+    <%= form.number_field :sequence %>
+  </div>
+
+  <div>
+    <%= form.label :from_Date, style: "display: block" %>
+    <%= form.date_field :from_Date %>
+  </div>
+
+  <div>
+    <%= form.label :to_Date, style: "display: block" %>
+    <%= form.date_field :to_Date %>
+  </div>
+
+  <div>
+    <%= form.label :total_Days, style: "display: block" %>
+    <%= form.text_field :total_Days %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_field :comment %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

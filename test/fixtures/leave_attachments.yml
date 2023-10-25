@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leave: one
+  filename: MyString
+  attachment_link: MyString
+
+two:
+  leave: two
+  filename: MyString
+  attachment_link: MyString

@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  leave: one
+  leave_type: one
+  leave_status: one
+  employee: one
+  sequence: 1
+  from_Date: 2023-10-25
+  to_Date: 2023-10-25
+  total_Days: 1.5
+  comment: MyString
+
+two:
+  description: MyString
+  leave: two
+  leave_type: two
+  leave_status: two
+  employee: two
+  sequence: 1
+  from_Date: 2023-10-25
+  to_Date: 2023-10-25
+  total_Days: 1.5
+  comment: MyString

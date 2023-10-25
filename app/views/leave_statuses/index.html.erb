@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Leave statuses</h1>
+
+<div id="leave_statuses">
+  <% @leave_statuses.each do |leave_status| %>
+    <%= render leave_status %>
+    <p>
+      <%= link_to "Show this leave status", leave_status %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New leave status", new_leave_status_path %>

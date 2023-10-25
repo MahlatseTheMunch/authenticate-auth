@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @leave_accrual %>
+
+<div>
+  <%= link_to "Edit this leave accrual", edit_leave_accrual_path(@leave_accrual) %> |
+  <%= link_to "Back to leave accruals", leave_accruals_path %>
+
+  <%= button_to "Destroy this leave accrual", @leave_accrual, method: :delete %>
+</div>

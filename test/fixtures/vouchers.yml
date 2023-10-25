@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee: one
+  description: MyString
+  comment: MyString
+  processed: false
+
+two:
+  employee: two
+  description: MyString
+  comment: MyString
+  processed: false

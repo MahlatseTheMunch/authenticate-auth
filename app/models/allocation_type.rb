@@ -1,0 +1,2 @@
+class AllocationType < ApplicationRecord
+end

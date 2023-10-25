@@ -1,0 +1,17 @@
+<%= form_with(model: sharepoint) do |form| %>
+  <% if sharepoint.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sharepoint.errors.count, "error") %> prohibited this sharepoint from being saved:</h2>
+
+      <ul>
+        <% sharepoint.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

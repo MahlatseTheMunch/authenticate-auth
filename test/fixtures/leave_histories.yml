@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  comment: MyText
+  leave: one
+  leave_status: one
+
+two:
+  description: MyString
+  comment: MyText
+  leave: two
+  leave_status: two

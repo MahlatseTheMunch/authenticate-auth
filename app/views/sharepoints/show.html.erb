@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sharepoint %>
+
+<div>
+  <%= link_to "Edit this sharepoint", edit_sharepoint_path(@sharepoint) %> |
+  <%= link_to "Back to sharepoints", sharepoints_path %>
+
+  <%= button_to "Destroy this sharepoint", @sharepoint, method: :delete %>
+</div>

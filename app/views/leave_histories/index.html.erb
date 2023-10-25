@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Leave histories</h1>
+
+<div id="leave_histories">
+  <% @leave_histories.each do |leave_history| %>
+    <%= render leave_history %>
+    <p>
+      <%= link_to "Show this leave history", leave_history %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New leave history", new_leave_history_path %>

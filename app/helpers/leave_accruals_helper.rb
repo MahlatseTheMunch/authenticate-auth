@@ -1,0 +1,2 @@
+module LeaveAccrualsHelper
+end

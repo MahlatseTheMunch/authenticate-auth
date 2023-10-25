@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  region: one
+  holiday_date: 2023-10-25
+  holiday_name: MyString
+
+two:
+  region: two
+  holiday_date: 2023-10-25
+  holiday_name: MyString

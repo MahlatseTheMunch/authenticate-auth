@@ -1,0 +1,2 @@
+class PeriodType < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sharepoints</h1>
+
+<div id="sharepoints">
+  <% @sharepoints.each do |sharepoint| %>
+    <%= render sharepoint %>
+    <p>
+      <%= link_to "Show this sharepoint", sharepoint %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sharepoint", new_sharepoint_path %>

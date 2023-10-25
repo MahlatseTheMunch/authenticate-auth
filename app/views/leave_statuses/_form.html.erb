@@ -1,0 +1,22 @@
+<%= form_with(model: leave_status) do |form| %>
+  <% if leave_status.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(leave_status.errors.count, "error") %> prohibited this leave_status from being saved:</h2>
+
+      <ul>
+        <% leave_status.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

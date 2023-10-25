@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @skhokho %>
+
+<div>
+  <%= link_to "Edit this skhokho", edit_skhokho_path(@skhokho) %> |
+  <%= link_to "Back to skhokhos", skhokhos_path %>
+
+  <%= button_to "Destroy this skhokho", @skhokho, method: :delete %>
+</div>
